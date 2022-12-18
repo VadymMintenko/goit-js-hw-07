@@ -5,9 +5,9 @@ console.log(galleryItems);
 
 const galleryContainer = document.querySelector(".gallery");
 
-const addEl = document.createElement("ul");
+const addList = document.createElement("ul");
 
-const elem = galleryItems.map(({ preview, original, description }) => {
+const ItemElements = galleryItems.map(({ preview, original, description }) => {
   const newItemEl = document.createElement("li");
   const imageEl = document.createElement("img");
   imageEl.src = `${preview}`;
@@ -16,6 +16,6 @@ const elem = galleryItems.map(({ preview, original, description }) => {
   return newItemEl;
 });
 
-addEl.append(...elem);
-galleryContainer.append(addEl);
+addList.append(...ItemElements);
+galleryContainer.append(addList);
 console.log(galleryContainer);
