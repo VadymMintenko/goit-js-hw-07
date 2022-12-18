@@ -15,12 +15,13 @@ function createItemEl(galleryItems) {
   <a class="gallery__link" href="large-image.jpg">
     <img
       class="gallery__image"
-      src=${preview}
+      src='${preview}'
       data-source="large-image.jpg"
-      alt=${description}
+      alt='${description}'
     />
   </a>
 </div>`;
     })
     .join("");
 }
+console.log(basicLightbox);
