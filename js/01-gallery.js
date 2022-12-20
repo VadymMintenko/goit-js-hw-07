@@ -25,7 +25,7 @@ function clickImaage(evt) {
   }
   evt.preventDefault();
   const instance = basicLightbox.create(
-    `<img src="${evt.target.dataset.source}" alt="${evt.target.dataset.picturedesc}" />`
+    `<img src="${evt.target.dataset.source}" alt="${evt.target.dataset.pictureDesc}" />`
   );
   instance.show();
 }
