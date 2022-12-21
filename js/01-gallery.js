@@ -28,4 +28,10 @@ function clickImaage(evt) {
     `<img src="${evt.target.dataset.source}" alt="${evt.target.dataset.pictureDesc}" />`
   );
   instance.show();
+  document.addEventListener("keydown", keyClose);
+  function keyClose(evt) {
+    if (evt.code === "Escape") {
+      instance.close();
+    }
+  }
 }
